@@ -113,6 +113,14 @@
       "delay": 0,
       "misMatchThreshold": 0.1,
       "onReadyScript": "mailings-mosaico/advanced-mailing-options"
+    },
+    {
+      "label": "Template Manager",
+      "url": "{url}/civicrm/a/#/mosaico-template",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1
     }
   ],
   "paths": {
