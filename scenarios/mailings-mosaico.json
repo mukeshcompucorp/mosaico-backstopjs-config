@@ -1,0 +1,130 @@
+{
+  "viewports": [{
+    "name": "desktop",
+    "width": 1920,
+    "height": 900
+  }],
+  "onReadyScript": "common/close-notifications",
+  "scenarios": [
+    {
+      "label": "New Mailing",
+      "url": "{url}/civicrm/a/#/mailing/new",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onBeforeScript": "login.js"
+    },
+    {
+      "label": "New Mailing - Mailing",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/mailing"
+    },
+    {
+      "label": "New Mailing - Mailing - Recipients Estimate",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/recipients-estimate"
+    },
+    {
+      "label": "New Mailing - Mailing - Recipients Settings",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/recipients-settings"
+    },
+    {
+      "label": "New Mailing - Design",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/design"
+    },
+    {
+      "label": "New Mailing - Design - Edit",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/design-edit"
+    },
+    {
+      "label": "New Mailing - Design - Send Test Mail",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/design-edit-test"
+    },
+    {
+      "label": "New Mailing - Design - Send Test Mail Preview HTML",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/design-test-preview-html"
+    },
+    {
+      "label": "New Mailing - Design - Send Test Mail Preview Text",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/design-test-preview-text"
+    },
+    {
+      "label": "New Mailing - Options",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/options"
+    },
+    {
+      "label": "New Mailing - Options - Advanced Mailing Options",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/advanced-mailing-options"
+    },
+    {
+      "label": "Edit Mail Template",
+      "url": "{url}/civicrm/a/#/mailing/1",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 0,
+      "misMatchThreshold": 0.1,
+      "onReadyScript": "mailings-mosaico/advanced-mailing-options"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "./backstop_data/screenshots/mailings-mosaico-menu/reference",
+    "bitmaps_test": "./backstop_data/screenshots/mailings-mosaico-menu/test",
+    "compare_data": "./backstop_data/screenshots/mailings-mosaico-menu/compare.json",
+    "casper_scripts": "./casper_scripts"
+  },
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "cliExitOnFail": false,
+  "casperFlags": ["--log-level=info"],
+  "debug": false,
+  "port": 3001
+}
