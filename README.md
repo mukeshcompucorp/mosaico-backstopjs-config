@@ -145,6 +145,6 @@ This script always needs to be run with shoreditch test to verify that, changes 
 - [x] Step 3 Initial screen
 - [x] Step 3 Advanced settings popup
 - [ ] Step 3 Radio Buttons
-- [ ] Template management
+- [x] Template management
 
 
