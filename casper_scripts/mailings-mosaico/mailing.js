@@ -4,6 +4,6 @@ module.exports = function (casper, scenario, vp) {
   var page = new Page(casper, scenario, vp);
 
   casper.then(function () {
-    page.changeTab('.crm_wizard__title ul li:first a');
+    page.changeTab('.crm_wizard__title ul li:first-child a');
   });
 };
