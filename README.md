@@ -37,4 +37,4 @@ Use https://github.com/compucorp/backstopjs-config/ for Vanilla CiviCRM tests
 - [x] Step 3 Initial screen
 - [x] Step 3 Advanced settings popup
 - [ ] Step 3 Radio Buttons
-- [ ] Template management
+- [x] Template management
